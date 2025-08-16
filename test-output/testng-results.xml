@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-14T19:42:51 IST" name="Default suite" finished-at="2025-08-14T19:44:13 IST" duration-ms="82121">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-08-14T19:42:51 IST" name="Default test" finished-at="2025-08-14T19:44:13 IST" duration-ms="82121">
+      <class name="com.Nykaa.cucumberTestNGRunner.GiftCardRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:42:51 IST" name="setUpClass" finished-at="2025-08-14T19:42:52 IST" duration-ms="793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6704df84]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:42:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-14T19:43:21 IST" duration-ms="28823" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that 'Your Shopping Bag is empty' text displayed when cart is empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the cart functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[text()='Your Shopping Bag is empty']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[text()='Your Shopping Bag is empty']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.Nykaa.AbstractPageObject.Abstract.WaitToAppear(Abstract.java:28)
+at com.Nykaa.PageObjects.HomePage.getEmptyCartMessage(HomePage.java:62)
+at com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_text_displayed(StepDefinitions.java:39)
+at ✽.User should see "Your Shopping Bag is empty" text displayed(file:///D:/All%20Desktop%20folders/Selenium%20Revision/Shubham%20Selenium%20Codes/Nykaa/src/test/java/com/Nykaa/features/Cart.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Your Shopping Bag is empty']"}
+  (Session info: MicrosoftEdge=139.0.3405.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [76bcec75b254f0124bbab42d3dfc7c85, findElement {using=xpath, value=//p[text()='Your Shopping Bag is empty']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.86, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59291}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59291/devtoo..., se:cdpVersion: 139.0.3405.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bcec75b254f0124bbab42d3dfc7c85
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 4 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:43:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-14T19:43:35 IST" duration-ms="14440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user is able to send gift card with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify user is able to send gift"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:43:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-14T19:43:43 IST" duration-ms="8357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that 'PROCEED TO PAY' button is disabled when no details are entered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify user is able to send gift"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:43:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-14T19:43:49 IST" duration-ms="5850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that text message is framed and displayed correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify user is able to send gift"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:43:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-14T19:43:54 IST" duration-ms="5184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can filter the product by "Customer Top Rated""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Popular Dot & Key Product Details"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:43:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-14T19:44:01 IST" duration-ms="6316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can check product deliverable by entering valid PIN code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the product deliverable functionality based on PIN code"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:44:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-14T19:44:13 IST" duration-ms="12000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can check product deliverable by entering invalid PIN code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify the product deliverable functionality based on PIN code"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Nykaa.cucumberTestNGRunner.GiftCardRunner@7c6908d7]" started-at="2025-08-14T19:44:13 IST" name="tearDownClass" finished-at="2025-08-14T19:44:13 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.Nykaa.cucumberTestNGRunner.GiftCardRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

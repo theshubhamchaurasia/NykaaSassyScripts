@@ -1,0 +1,742 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Nykaa Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nykaa Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 14, 2025 07:42:51 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the cart functionality</p>
+            <p class="text-sm">
+              <span>7:42:52 pm</span> / <span>00:00:28:679</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Verify the cart functionality</h5>
+<span class='badge badge-success'>08.14.2025 7:42:52 pm</span>
+<span class='badge badge-danger'>08.14.2025 7:43:21 pm</span>
+<span class='badge badge-default'>00:00:28:679</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Verify that 'Your Shopping Bag is empty' text displayed when cart is empty</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_is_on_nykaa_home_page()">
+                <span>Given User is on Nykaa home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_clicks_on_cart_icon()">
+                <span>When User clicks on Cart icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_text_displayed(java.lang.String)">
+                <span>Then User should see "Your Shopping Bag is empty" text displayed</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[text()='Your Shopping Bag is empty']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.Nykaa.AbstractPageObject.Abstract.WaitToAppear(Abstract.java:28)
+	at com.Nykaa.PageObjects.HomePage.getEmptyCartMessage(HomePage.java:62)
+	at com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_text_displayed(StepDefinitions.java:39)
+	at ✽.User should see "Your Shopping Bag is empty" text displayed(file:///D:/All%20Desktop%20folders/Selenium%20Revision/Shubham%20Selenium%20Codes/Nykaa/src/test/java/com/Nykaa/features/Cart.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Your Shopping Bag is empty']"}
+  (Session info: MicrosoftEdge=139.0.3405.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [76bcec75b254f0124bbab42d3dfc7c85, findElement {using=xpath, value=//p[text()='Your Shopping Bag is empty']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.86, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59291}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59291/devtoo..., se:cdpVersion: 139.0.3405.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bcec75b254f0124bbab42d3dfc7c85
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 4 more
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.Nykaa.stepDefinitions.Hooks.ResultCheck(io.cucumber.java.Scenario)</span>
+      <div>Verify that 'Your Shopping Bag is empty' text displayed when cart is empty
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_text(java.lang.String)">
+                <span>And User should see text "This feels too light! Go on, add all your favourites"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify user is able to send gift</p>
+            <p class="text-sm">
+              <span>7:43:21 pm</span> / <span>00:00:28:634</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify user is able to send gift</h5>
+<span class='badge badge-success'>08.14.2025 7:43:21 pm</span>
+<span class='badge badge-danger'>08.14.2025 7:43:49 pm</span>
+<span class='badge badge-default'>00:00:28:634</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user
+I want to send different types of gift cards</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Verify user is able to send gift card with valid details</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Verify user is able to send gift card with valid details</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Nykaa home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on Gift Card link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User selects "Nykaa Gift Card" gift card</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enter details :</span>
+      <div><table class='markup-table table '><tr><td>To</td><td>Shimran Sharma</td></tr><tr><td>Email</td><td>shimran@gmail.com</td></tr><tr><td>Message</td><td>Happy Birthday</td></tr><tr><td>Amount</td><td>1000</td></tr><tr><td>From</td><td>Shubham Chaurasia</td></tr><tr><td>Phone Number</td><td>8965748596</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on PROCEED TO PAY button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User selects Scan & Pay UPI payment option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should be able to see QR code to scan and pay</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Verify that 'PROCEED TO PAY' button is disabled when no details are entered</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_is_on_nykaa_home_page()">
+                <span>Given User is on Nykaa home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_clicks_on_gift_card_link()">
+                <span>And User clicks on Gift Card link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_selects_gift_card(java.lang.String)">
+                <span>When User selects "Nykaa Gift Card" gift card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_that_proceed_to_pay_button_is_disabled()">
+                <span>Then User should see that PROCEED TO PAY button is disabled</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Verify that text message is framed and displayed correctly</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="44"><span class="badge log pass-bg mr-2">Pass</span>Verify that text message is framed and displayed correctly</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Nykaa home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks on Gift Card link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User selects "Nykaa Gift Card" gift card</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enter details :</span>
+      <div><table class='markup-table table '><tr><td>To</td><td>Shimran Sharma</td></tr><tr><td>Email</td><td>shimran@gmail.com</td></tr><tr><td>Message</td><td>Happy Birthday</td></tr><tr><td>Amount</td><td>1000</td></tr><tr><td>From</td><td>Shubham Chaurasia</td></tr><tr><td>Phone Number</td><td>8965748596</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see the text message framed as "Hi, Shimran Sharma You have received a gift card from Shubham Chaurasia Happy Birthday"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Popular Dot & Key Product Details</p>
+            <p class="text-sm">
+              <span>7:43:49 pm</span> / <span>00:00:05:182</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Popular Dot & Key Product Details</h5>
+<span class='badge badge-success'>08.14.2025 7:43:49 pm</span>
+<span class='badge badge-danger'>08.14.2025 7:43:54 pm</span>
+<span class='badge badge-default'>00:00:05:182</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>Verify user can filter the product by "Customer Top Rated"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_is_on_nykaa_home_page()">
+                <span>Given User is on Nykaa home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_navigate_to_dot_key_brand_page()">
+                <span>And User navigate to Dot & Key brand page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_select_sort_by_customer_top_rated()">
+                <span>And User select Sort By Customer Top Rated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_the_products_sorted_by_and_get_the_first_product_details(java.lang.String)">
+                <span>Then User should see the products sorted by "Customer Top Rated" and get the first product details</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="69"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the product deliverable functionality based on PIN code</p>
+            <p class="text-sm">
+              <span>7:43:55 pm</span> / <span>00:00:18:310</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify the product deliverable functionality based on PIN code</h5>
+<span class='badge badge-success'>08.14.2025 7:43:55 pm</span>
+<span class='badge badge-danger'>08.14.2025 7:44:13 pm</span>
+<span class='badge badge-default'>00:00:18:310</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=69</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>Verify user can check product deliverable by entering valid PIN code</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_is_on_nykaa_home_page()">
+                <span>Given User is on Nykaa home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_search_for(java.lang.String)">
+                <span>And User search for "Minimalist Sunscreen"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_select_sort_by_customer_top_rated()">
+                <span>And User select Sort By Customer Top Rated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_clicks_on_top_rated_minimalist_sunscreen_product()">
+                <span>And User clicks on top rated Minimalist Sunscreen product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_enters_in_the_pin_code_field(java.lang.String)">
+                <span>When User enters "110001" in the PIN code field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.click_on_button()">
+                <span>And Click on Check button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_delivery_text_displayed(java.lang.String)">
+                <span>Then User should see "COD available" delivery text displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="87"><span class="badge log pass-bg mr-2">Pass</span>Verify user can check product deliverable by entering invalid PIN code</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_is_on_nykaa_home_page()">
+                <span>Given User is on Nykaa home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_search_for(java.lang.String)">
+                <span>And User search for "Minimalist Sunscreen"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_select_sort_by_customer_top_rated()">
+                <span>And User select Sort By Customer Top Rated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_clicks_on_top_rated_minimalist_sunscreen_product()">
+                <span>And User clicks on top rated Minimalist Sunscreen product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_enters_in_the_pin_code_field(java.lang.String)">
+                <span>When User enters "999999" in the PIN code field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.click_on_button()">
+                <span>And Click on Check button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Nykaa.stepDefinitions.StepDefinitions.user_should_see_not_delivery_text_displayed(java.lang.String)">
+                <span>Then User should see "Does not ship to pincode" not delivery text displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:42:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Then User should see "Your Shopping Bag is empty" text displayed</a>
+<div class="">
+<span class="badge badge-default">Verify the cart functionality.Verify that 'Your Shopping Bag is empty' text displayed when cart is empty.Then User should see "Your Shopping Bag is empty" text displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 14, 2025 07:42:51 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 14, 2025 07:44:13 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'>
+<b>3</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='25%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='85%'><b>6</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='14%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>37</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Verify the cart functionality":28.679,"Verify user is able to send gift":28.634,"Popular Dot & Key Product Details":5.182,"Verify the product deliverable functionality based on PIN code":18.31
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 6,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 37,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 1,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

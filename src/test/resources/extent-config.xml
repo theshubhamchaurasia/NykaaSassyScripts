@@ -1,0 +1,13 @@
+<extentreports>
+    <configuration>
+        <!-- Dark Theme -->
+        <theme>dark</theme>
+
+        <!-- Report Title -->
+        <reportName>Nykaa Automation Report</reportName>
+        <documentTitle>Nykaa Test Report</documentTitle>
+
+        <!-- Encoding -->
+        <encoding>UTF-8</encoding>
+    </configuration>
+</extentreports>
