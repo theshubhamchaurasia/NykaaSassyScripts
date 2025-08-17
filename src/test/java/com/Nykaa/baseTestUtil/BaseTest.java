@@ -34,7 +34,7 @@ public class BaseTest {
         return prop.getProperty(key);
     }
 
-    public void TakeScreenshot(String picName, WebDriver driver) {
+    public String TakeScreenshot(String picName, WebDriver driver) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         File destination = new File(System.getProperty("user.dir") + "\\ScreenShot\\" + picName + ".png");
@@ -44,7 +44,7 @@ public class BaseTest {
         } catch (Exception e) {
             System.out.println("Error taking screenshot: " + e.getMessage());
         }
-//        return System.getProperty("user.dir") + "\\ScreenShot\\" + picName + ".png";
+        return System.getProperty("user.dir") + "\\ScreenShot\\" + picName + ".png";
     }
 
     public static WebDriver InitializeDriver(){

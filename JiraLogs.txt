@@ -1,0 +1,74 @@
+Request method:	POST
+Request URI:	https://shubhamautomationtester.atlassian.net/rest/api/3/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic c2h1YmhhbXNpc3dhMTUwQGdtYWlsLmNvbTpBVEFUVDN4RmZHRjBkcVluYm9ueHkybGFZWmpFZmVZZm1kNHVPeEp0QjFYd04xMUhMY2U4c1lnVXlHV19PcDBySEJ6NEwwdzRBU0JVaUh5d0hWZFVzTjh6Z1V4cWR3M212N1lndGZXSnlINGlSNkc1c1lhWnVLempya2t1aFFoQXlaWjczQXVOemxIMFdFNnlYbG9MdE5TYnJQZERBRjVKbG5rQTExcUtsWnRGQmRnMGlXZTc3Mms9NjA0MDBFRUY=
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "CRED"
+        },
+        "summary": "Verify that 'Your Shopping Bag is empty' text displayed when cart is empty",
+        "description": {
+            "type": "doc",
+            "version": 1,
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "Verify that 'Your Shopping Bag is empty' text displayed when cart is empty scenario is FAILED"
+                        }
+                    ]
+                }
+            ]
+        },
+        "issuetype": {
+            "name": "Bug"
+        }
+    }
+}
+HTTP/1.1 201 Created
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Sat, 16 Aug 2025 16:56:43 GMT
+Server: AtlassianEdge
+Timing-Allow-Origin: *
+X-Arequestid: 9a0786784708addac91e97ffd9497dba
+Set-Cookie: atlassian.xsrf.token=4dc87f252e66a1aa0cd7c45ea2e0cfb11b595b88_lin; Path=/; SameSite=None; Secure
+X-Aaccountid: 70121%3A2f032cfb-8d05-4944-aeea-df65d2296522
+Cache-Control: no-cache, no-store, no-transform
+X-Beta-Ratelimit-Limit: 200
+X-Beta-Ratelimit-Remaining: 199
+Beta-Retry-After: 1
+X-Beta-Ratelimit-Reset: 2025-08-16T16:56Z
+X-Beta-Ratelimit-Reason: jira-burst-based
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Atl-Traceid: cd8fb37a85cb4dec97ed1db31a63a058
+Atl-Request-Id: cd8fb37a-85cb-4dec-97ed-1db31a63a058
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
+Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
+X-Cache: Miss from cloudfront
+Via: 1.1 0ae9c706c54d0938ea7491ad05d01118.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: DEL54-P2
+X-Amz-Cf-Id: qyNlNqI4q-CjECI3U1US0I_r2Vaj7h554wO68ZNcgka8Ogok5Ujfdw==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=23,cdn-upstream-fbl;dur=1033,atl-edge;dur=963,atl-edge-internal;dur=218,atl-edge-upstream;dur=746,atl-edge-pop;desc="aws-ap-south-1",cdn-cache-miss,cdn-pop;desc="DEL54-P2",cdn-rid;desc="qyNlNqI4q-CjECI3U1US0I_r2Vaj7h554wO68ZNcgka8Ogok5Ujfdw==",cdn-downstream-fbl;dur=1038
+
+{
+    "id": "10120",
+    "key": "CRED-25",
+    "self": "https://shubhamautomationtester.atlassian.net/rest/api/3/issue/10120"
+}
